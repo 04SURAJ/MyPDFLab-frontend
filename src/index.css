@@ -1,0 +1,88 @@
+body {
+  background-color: #f8f9fa;
+  
+}
+.tool-grid { display: grid; grid-template-columns: repeat(auto-fill,minmax(220px,1fr)); gap: 18px; }
+.tool-card { background: #fff; border-radius: 12px; padding: 18px; box-shadow: 0 1px 6px rgba(0,0,0,0.04); }
+.upload-area { border: 2px dashed #dee2e6; padding: 24px; border-radius: 8px; background: #ffffff; }
+
+.upload-area { border: 2px dashed #dee2e6; border-radius: 8px; background: #fff; }
+.card { border-radius: 12px; }
+.nav-link.active {
+  font-weight: 600;
+  color: #0d6efd !important;
+}
+.navbar-logo {
+  height: 48px;     /* balanced size */
+  width: auto;
+}
+
+@media (max-width: 768px) {
+  .navbar-logo {
+    height: 42px;
+  }
+}
+.navbar-brand {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.navbar {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+
+
+.hamburger {
+  border: none;
+  background: transparent;
+  padding: 6px;
+}
+
+.hamburger span {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #333;
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+
+/* Animate to X when open */
+.navbar-toggler:not(.collapsed) span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(2) {
+  opacity: 0;
+}
+
+.navbar-toggler:not(.collapsed) span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+
+
+.navbar .nav-link {
+  font-weight: 500; /* slightly bold */
+}
+
+.navbar .nav-link.active {
+  font-weight: 600; /* active link thoda aur bold */
+}
+
+
+.lead {
+  white-space: normal; /* Wrap text */
+  word-wrap: break-word;
+}
+        h2.display-4 {
+  letter-spacing: 1px;
+}
+
+p.lead {
+  max-width: 700px;
+  margin: 0 auto;
+  color: #555; /* subtle grey */
+}
